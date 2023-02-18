@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body style="
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    ">
+  <touxianglan style="
+        width: 100%;
+        height: 60%;
+        background-color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      ">
+    <img alt="康文昌" src="https://kangwenchag.com/logo.png" width="80px" height="80px" />
+  </touxianglan>
+  <zhuneirong style="
+        display: block;
+        padding: 30px;
+        max-width: 700px;
+        min-height: 70vh;
+        width: 90%;
+        letter-spacing: 1px;
+        line-height: 1.7;
+      ">
+    <div><strong>css有三种书写形式：内联样式，内部样式和外部样式。<BR>
+        css常用属性和值:</strong>
+
+      <ol>
+        <li>display:<br>
+          显示.<br>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ol>
+    </div>
+    <div><strong>slector(选择器借助element，id，class，attribute定位元素):</strong>
+      .表示class，#表示id，+表示下一个相邻同级标签，
+      ~表示下一个所有同级标签，>表示所有直接子标签，
+      :表示对冒号前标签的限制，[attribute]表示属性名称。
+      <ol>
+        <li>Adjacent Sibling Selector:A + B<br>
+          Select an element
+          that directly follows another element.<br>
+          Examples:
+          p + .intro selects every element with class="intro" that directly follows a p
+        </li>
+        <li>General Sibling Selector:A ~ B<br>
+          Select elements that follows another element.
+
+          You can select all siblings of an element that follow it. This is like the Adjacent Selector (A + B) except it
+          gets all
+          of the following elements instead of one.<br>
+          Examples:A ~ B selects all B that follow a A
+        </li>
+        <li>Child Selector:A > B <br>
+          Select direct children of an element.<br>
+          You can select elements that are direct children of other elements. A child element is any element that is
+          nested directly in another element.
+          Elements that are nested deeper than that are called descendant elements.
+          <br> Examples:A > B selects all B that are a direct children A
+        </li>
+        <li>A:first-child;A:last-child; A:nth-child(3);A:nth-last-child(2);
+          A:first-of-type;A:first-of-type(3/odd/even);
+          A:nth-of-type(6n+2) 6n+2表示等差数列;
+        </li>
+        <li>A[attribute];A[attribute="value"];
+          [attribute^="value"]表示开头等于value;[attribute$="value"]表示结尾等于value;[attribute*="value"]表示任意位置等于value</li>
+      </ol>
+    </div>
+  </zhuneirong>
+
+  <footer style="
+        display: block;
+        width: 100%;
+        height: 60%;
+        background-color: #eee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      ">备案</footer>
+
+</body>
+
+</html>

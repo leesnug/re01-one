@@ -1,47 +1,103 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>康文昌的在线HTML 教学小工具</title>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./main.fd73557b.css" rel="stylesheet" />
+    <title>编程学习笔记</title>
     <style>
-      body {
-        margin: 0;
-      }
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #d5e1e0;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        /* * {
+            border: 1px solid rgb(3, 24, 163);
+        } */
     </style>
-  </head>
-  <body>
-    <div style="background-color: #f1f1f1; text-align: center; padding: 40px">
-      <img src="picture1.png" alt="万物皆信息" width="80px" height="80px"
+</head>
+
+<body>
+    <!--头部-->
+    <div style="height: 100px; font-size: xx-large; text-align: center">
+        web前后端编程学习笔记
     </div>
-    <div
-      style="
-        background-color: rgba(189, 135, 189, 0.067);
-        color: rgb(128, 0, 34);
-        max-width: 500px;
-        margin: 30px auto;
-        padding: 15px;
-        line-height: 2;
-        text-align: left;
-      "
-    >
-      <h1 style="text-align: center; color: black">html、浏览器、css</h1>
-      <p>一：HTML数据作为参数传给浏览器函数处理后成为网页画面。</p>
-      <p>
-        二：浏览器渲染原理就是找到HTML标签，分成小盒子，再找到小盒子的样式，然后把它们画出来。
-      </p>
-      <p>三：组合不同标签，使用不同css样式，像玩俄罗斯方块一样做出各种网页。</p>
+    <!--主区-->
+    <div>
+        <!--作业导航区-->
+        <div style="width: 100px; justify-content: center; align-items: center" class="flex column">
+            <div>作业</div>
+            <div>
+                <nav><a href="./mdn-html-letter.html">html作业</a></nav>
+            </div>
+            <div>
+                <nav><a href="./css.html">css作业</a></nav>
+            </div>
+            <div>
+                <nav><a href="./flex.html">flex作业</a></nav>
+            </div>
+        </div>
+        <!--内容区-->
+        <div>
+            <ul id="mdn-plus-menu" class="submenu mdn-plus hidden inline-submenu-lg" aria-labelledby="mdn-plus-button">
+                <li class=" ">
+                    <a href="https://developer.mozilla.org/en-us/plus" class="submenu-item">
+                        <div class="submenu-icon"></div>
+                        <div class="submenu-content-container">
+                            <div class="submenu-item-heading">Overview</div>
+                            <p class="submenu-item-description">
+                                A customized MDN experience
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class=" ">
+                    <a href="https://developer.mozilla.org/en-us/plus/updates" class="submenu-item">
+                        <div class="submenu-icon"></div>
+                        <div class="submenu-content-container">
+                            <div class="submenu-item-heading">Updates</div>
+                            <p class="submenu-item-description">
+                                All browser compatibility updates at a glance
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class=" ">
+                    <a href="https://developer.mozilla.org/en-US/plus/docs/features/overview" class="submenu-item">
+                        <div class="submenu-icon"></div>
+                        <div class="submenu-content-container">
+                            <div class="submenu-item-heading">Documentation</div>
+                            <p class="submenu-item-description">
+                                Learn how to use MDN Plus
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class=" ">
+                    <a href="https://developer.mozilla.org/en-US/plus/docs/faq" class="submenu-item">
+                        <div class="submenu-icon"></div>
+                        <div class="submenu-content-container">
+                            <div class="submenu-item-heading">FAQ</div>
+                            <p class="submenu-item-description">
+                                Frequently asked questions about MDN Plus
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div
-      style="
-        background-color: #f1f1f1;
-        text-align: center;
-        padding: 40px;
-        font-size: 12px;
-      "
-    >
-      <p>MY WEB</p>
-      <a href="https://kangwenchang.com">友情链接：康文昌</a>
-    </div>
-  </body>
+</body>
+
 </html>
