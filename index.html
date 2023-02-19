@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>编程学习笔记</title>
     <style>
+        /* * {
+            border: 1px solid rgb(3, 24, 163);
+        } */
+
         body {
             margin: 0;
             height: 100vh;
@@ -21,34 +25,90 @@
             flex-direction: column;
         }
 
-        /* * {
-            border: 1px solid rgb(3, 24, 163);
-        } */
+
+
+        .jiShu {
+            counter-reset: section;
+        }
+
+        .bianHao::before {
+            counter-increment: section;
+            content: counter(section)".";
+            color: rgb(0, 146, 24);
+        }
+
+        nav {}
+
+        ul {
+
+            list-style-type: none;
+            margin: 0px;
+            padding: 6px;
+
+        }
+
+        li {
+            display: inline;
+            margin-left: 3px;
+
+        }
+
+        .daoHang a:link {
+            font-weight: bold;
+            color: #FFFFFF;
+            background-color: #11bd3;
+            text-align: center;
+            padding: 6px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .daoHang a:visited,
+        .daoHang a:hover,
+        .daoHang a:active {
+            background-color: #7A991A;
+        }
     </style>
 </head>
 
 <body>
     <!--头部-->
-    <div style="height: 100px; font-size: xx-large; text-align: center">
-        web前后端编程学习笔记
+    <div style="height: 120px; font-size: large; text-align: center">
+        <h2>全栈修炼之路<sub>——万物皆信息</sub></h2>
     </div>
-    <!--主区-->
-    <div class="flex">
-        <!--作业导航区-->
+    <!--水平导航栏-->
+    <div class="daoHang" style="background-color: rgb(142, 201, 143);">
+        <ul>
+            <li><a href="index.html">主页</a></li>
+            <li><a href="#news">HTML</a></li>
+            <li><a href="#contact">CSS</a></li>
+            <li><a href="#about">JavaScript</a></li>
+        </ul>
+    </div>
+
+    <!-- 主区 -->
+    <div class="flex" style="min-height: 200px;">
+        <!--作业区-->
         <div style="width: 100px; justify-content: center; class=" flex column">
-            <div style="text-align: center;">作业</div>
-            <div>
-                <nav><a href="./mdn-html-letter.html">html作业</a></nav>
+            <div style="text-align: center;">
+                <h3>作业</h3>
+            </div>
+            <div class="jiShu">
+                <nav class="bianHao">
+                    <a style="color: rgb(0, 146, 24);" href="./mdn-html-letter.html">html作业</a>
+                </nav>
             </div>
             <div>
-                <nav><a href="./css.html">css作业</a></nav>
+                <nav class="bianHao"><a href="./css.html">css作业</a></nav>
             </div>
             <div>
-                <nav><a href="./flex.html">flex作业</a></nav>
+                <nav class="bianHao"><a href="./flex.html">flex作业</a></nav>
             </div>
         </div>
         <div style="flex: 1;"></div>
     </div>
+
+
     <!--底部栏-->
     <div class="flex" style="justify-content: center;">
         <div>
