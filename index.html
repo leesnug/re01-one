@@ -31,23 +31,29 @@
             counter-reset: section;
         }
 
+        .jiShu li a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .jiShu li a:hover {
+            color: #13c316;
+            text-decoration: none;
+        }
+
         .bianHao::before {
             counter-increment: section;
             content: counter(section)".";
-            color: rgb(0, 146, 24);
+
         }
 
-        nav {}
-
         ul {
-
             list-style-type: none;
             margin: 0px;
             padding: 6px;
-
         }
 
-        li {
+        .daoHang li {
             display: inline;
             margin-left: 3px;
 
@@ -87,22 +93,28 @@
     </div>
 
     <!-- 主区 -->
-    <div class="flex" style="min-height: 200px;">
+    <div class="flex" style="min-height: 200px;margin-left: 5px;">
         <!--作业区-->
-        <div style="width: 100px; justify-content: center; class=" flex column">
+        <div style="width: 200px; 
+        center; class="flex column">
             <div style="text-align: center;">
                 <h3>作业</h3>
             </div>
-            <div class="jiShu">
-                <nav class="bianHao">
-                    <a style="color: rgb(0, 146, 24);" href="./mdn-html-letter.html">html作业</a>
-                </nav>
-            </div>
-            <div>
-                <nav class="bianHao"><a href="./css.html">css作业</a></nav>
-            </div>
-            <div>
-                <nav class="bianHao"><a href="./flex.html">flex作业</a></nav>
+            <div class="jiShu" style ="border:rgb(159, 156, 159) solid 2px;">
+                <ul>
+                    <li style="list-style-type: none;" class="bianHao">
+                        <a href="./mdn-html-letter.html">html作业</a>
+                    </li>
+                    <li class="bianHao">
+                        <a href="./css.html">css作业</a>
+                    </li>
+                    <li class="bianHao">
+                        <a href="./flex.html">flex作业</a>
+                    </li>
+                    <li class="bianHao">
+                        <a href="./javascrip.html">javascrip作业</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div style="flex: 1;"></div>
