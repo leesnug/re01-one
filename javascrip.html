@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>菜鸟教程(runoob.com)</title>
+  </head>
+  <head>
+    <script>
+      async function asyFunc() {
+        let shuChu = await new Promise(function (resolve, reject) {
+          resolve("hello world?");
+        });
+        console.log(shuChu);
+      }
+      asyFunc();
+    </script>
+  </head>
+
+  <body onclick="checkCookie()">
+    点击
+  </body>
+</html>

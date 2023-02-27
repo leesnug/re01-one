@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>JavaScript笔记</p>
+    <p>
+      <ol>
+        <li>
+      空格和折行无关紧要。声明可横跨多行<br />
+      var person={ <br />
+      firstname : "John", <br />
+      lastname : "Doe", <br />
+      id : 5566 <br />
+      }; <br />
+      对象属性有两种寻址方式： <br />
+      实例 name=person.lastname;<br />
+      name=person["lastname"];<br />
+      <strong style="color:red
+      ">注意同一字符串不能折行</strong> 
+       </li>
+       <li>!==	 不绝对等于（值和类型有一个不相等，或两个都不相等）</li>
+       <li>正如您在 switch 语句那一章中看到的，可以对 JavaScript 语句进行标记。
+
+如需标记 JavaScript 语句，请在语句之前加上冒号：
+
+label:
+statements
+break 和 continue 语句仅仅是能够跳出代码块的语句。
+
+语法:
+
+break labelname; 
+ 
+continue labelname;
+continue 语句（带有或不带标签引用）只能用在循环中。
+
+break 语句（不带标签引用），只能用在循环或 switch 中。
+
+通过标签引用，break 语句可用于跳出任何 JavaScript 代码块：</li>
+<li>JavaScript严格模式和使用误区需复习
+  异步编程未看懂，代码规范需常复习。
+  计数器关键在return 函数。
+</li>
+<li>HTMLCollection 不是一个数组！
+
+HTMLCollection 看起来可能是一个数组，但其实不是。
+
+你可以像数组一样，使用索引来获取元素。
+
+HTMLCollection 无法使用数组的方法： valueOf(), pop(), push(), 或 join() 。</li>
+<li>JavaScript 的对象是可变的
+对象是可变的，它们是通过引用来传递的。
+
+以下实例的 person 对象不会创建副本：
+
+var x = person;  // 不会创建 person 的副本，是引用
+如果修改 x ，person 的属性也会改变：</li>
+      </ol> 
+    </p>
+  </body>
+</html>
