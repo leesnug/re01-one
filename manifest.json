@@ -1,8 +1,8 @@
 {
-  "short_name": "万物皆信息",
-  "name": "万物皆信息",
+  "short_name": "康文昌",
+  "name": "康文昌",
   "lang": "zh-CN",
-  "description": "前后端学习（HTML、CSS、JAVASCRIP）",
+  "description": "康文昌的个人网站。《Re01从零开始的编程之路》作者，元岛midorg.com 发起人，清林云baasapi.com 创始人。",
   "start_url": "/",
   "id": "/",
   "background_color": "#ffffff",
@@ -11,10 +11,14 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "/android-icon-192x192-seochecker-manifest-115.png",
-      "type": "image/png",
+      "src": "./icons/android-chrome-192x192.png",
       "sizes": "192x192",
-      "purpose": "any maskable"
+      "type": "image/png"
+    },
+    {
+      "src": "./icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
