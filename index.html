@@ -85,13 +85,7 @@
             background-repeat: no-repeat, repeat;
         }
     </style>
-      <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", function () {
-          navigator.serviceWorker.register("sw.js");
-        });
-      }
-    </script>
+
 </head>
 
 <body>
@@ -146,7 +140,13 @@
             <a href="https://metaisland.feishu.cn/mindnotes/bmncnVm87LbPlQF0jigDuSegubd#outline">编程学习知识图谱<a></a>
         </div>
     </div>
-  
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker.register("sw.js");
+            });
+        }
+    </script>
 </body>
 
 </html>

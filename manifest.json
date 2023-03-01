@@ -1,8 +1,8 @@
 {
-  "short_name": "康文昌",
-  "name": "康文昌",
+  "short_name": "万物皆信息",
+  "name": "万物皆信息",
   "lang": "zh-CN",
-  "description": "康文昌的个人网站。《Re01从零开始的编程之路》作者，元岛midorg.com 发起人，清林云baasapi.com 创始人。",
+  "description": "前后端学习笔记",
   "start_url": "https://leesnug.github.io/re01-one/",
   "id": "/",
   "background_color": "#ffffff",
