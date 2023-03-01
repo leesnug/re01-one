@@ -3,7 +3,7 @@
   "name": "康文昌",
   "lang": "zh-CN",
   "description": "康文昌的个人网站。《Re01从零开始的编程之路》作者，元岛midorg.com 发起人，清林云baasapi.com 创始人。",
-  "start_url": "https://leesnug.github.io/re01-one/",
+  "start_url": "/",
   "id": "/",
   "background_color": "#ffffff",
   "theme_color": "#76d8ff",
