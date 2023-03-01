@@ -1,0 +1,20 @@
+{
+  "short_name": "万物皆信息",
+  "name": "万物皆信息",
+  "lang": "zh-CN",
+  "description": "前后端学习（HTML、CSS、JAVASCRIP）",
+  "start_url": "/",
+  "id": "/",
+  "background_color": "#ffffff",
+  "theme_color": "#76d8ff",
+  "dir": "auto",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/android-icon-192x192-seochecker-manifest-115.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    }
+  ]
+}
