@@ -8,6 +8,8 @@
     <title>编程学习笔记</title>
     <meta name="discription" content="前后端学习（HTML、CSS、JAVASCRIP）" />
     <meta name="theme-color" content="#db5945">
+    <link rel="stylesheet" href="styles.css">
+    <script src="dianzan.js"></script>
     <link rel="manifest" href="manifest.json">
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
     <link rel="icon" href="./icons/favicon.ico">
@@ -95,7 +97,7 @@
     <!--头部-->
     <!-- 头像 -->
     <div class='flex' style="justify-content: center;">
-
+        <h1></h1>
         <h2>全栈修炼之路<sub>——万物皆信息</sub></h2>
     </div>
     <!--水平导航栏-->
@@ -114,7 +116,7 @@
         <div style="width: 200px; 
         center; class=" flex column">
             <div style="text-align: center;">
-                <h3>作业</h3>
+                <h3>作业<button id="dzs" onclick="dianZan()">0</button></h3>
             </div>
             <div class="jiShu" style="border:rgb(159, 156, 159) solid 2px;">
                 <ul class="flex column" style="padding: 10px;height: fit-content;font-size: larger;">
@@ -128,15 +130,29 @@
                         <a href="./flex.html">flex作业</a>
                     </li>
                     <li style="list-style-type: none;height: 40px;" class="bianHao">
-                        <a href="./javascrip.html">javascrip作业</a>
+                        <a href="./javascrip.html">javascrip作业1</a>
+                    </li>
+                    <li style="list-style-type: none;height: 40px;" class="bianHao">
+                        <a href="./tab1.html">记事页面</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div style="flex: 1;"></div>
     </div>
-
-
+    <div>
+        <fieldset>
+            <legend style="display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;">Is your cat an indoor or outdoor cat? </legend>
+            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+            <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+        </fieldset>
+    </div>
     <!--底部栏-->
     <div class="flex" style="justify-content: center;">
         <div>
