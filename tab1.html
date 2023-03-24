@@ -40,6 +40,7 @@
             color: #fff;
             font-size: 2rem;
             max-width: 90%;
+            min-width: 100px;
         }
 
         #anNiu {
@@ -66,7 +67,7 @@
 
 <body>
     <div class="box">
-        <input placeholder="最重要的事？" id="shuRuKuang">
+        <textarea placeholder="最重要的事？" id="shuRuKuang"></textarea>
         <span id="anNiu" onclick="change()">✔</span>
     </div>
     <script>
@@ -100,6 +101,8 @@
                     .then((res) => res.json())
                     .then((data) => {
                         console.log(data);
+                        console.log("测试");
+                        console.log("测试");
                     });
             }
         }

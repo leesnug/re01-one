@@ -34,26 +34,33 @@
 
 
 
-        .jiShu {
-            counter-reset: section;
+        .zuoye {
+            margin-left: 1em;
+            min-width: 200px;
+            max-width: 90%;
+            border: rgb(159, 156, 159) solid 2px;
         }
 
-        .jiShu li a {
-            color: #000;
+        .zuoye li {
+            margin-top: 1em;
+            font-size: large;
+        }
 
+        .zuoye li a {
+            color: #000;
             text-decoration: none;
         }
 
-        .jiShu li a:hover {
+        .zuoye li a:hover {
             color: #13c316;
             text-decoration: none;
         }
 
-        .bianHao::before {
+        /* .bianHao::before {
             counter-increment: section;
             content: counter(section)".";
 
-        }
+        } */
 
         ul {
             list-style-type: none;
@@ -111,36 +118,49 @@
     </div>
 
     <!-- 主区 -->
-    <div class="flex" style="min-height: 200px;margin-left: 5px;">
+    <div class="fle" style="min-height: 200px;margin-left: 5px;">
         <!--作业区-->
-        <div style="width: 200px; 
-        center; class=" flex column">
-            <div style="text-align: center;">
-                <h3>作业<button id="dzs" onclick="dianZan()">0</button></h3>
-            </div>
-            <div class="jiShu" style="border:rgb(159, 156, 159) solid 2px;">
-                <ul class="flex column" style="padding: 10px;height: fit-content;font-size: larger;">
-                    <li style="list-style-type: none;height: 40px;" class="bianHao">
+        <div style="text-align: center;">
+            <h3>作业 <button id="dzs" onclick="dianZan()">0</button></h3>
+        </div>
+        <div style="width: 200px;margin-left: 1em;" class=" flex ">
+
+            <div class="zuoye">
+                <ol>
+                    <li>
                         <a href="./mdn-html-letter.html">html作业</a>
                     </li>
-                    <li style="list-style-type: none;height: 40px;" class="bianHao">
+                    <li>
                         <a href="./css.html">css作业</a>
                     </li>
-                    <li style="list-style-type: none;height: 40px;" class="bianHao">
+                    <li>
                         <a href="./flex.html">flex作业</a>
                     </li>
-                    <li style="list-style-type: none;height: 40px;" class="bianHao">
-                        <a href="./javascrip.html">javascrip作业1</a>
+                    <li>
+                        <a href="./tab1.html">记事页</a>
                     </li>
-                    <li style="list-style-type: none;height: 40px;" class="bianHao">
-                        <a href="./tab1.html">记事页面</a>
+                    <li>
+                        <a href="./wuzhiqi.html">五子棋游戏</a>
                     </li>
-                </ul>
+                    <li>
+                        <a
+                            href="https://www.freecodecamp.org/certification/fcc188ee7bb-5d18-4e03-8d16-d8136e01e105/javascript-algorithms-and-data-structures">JavaScript
+                            Certification on freecodecamp</a>
+                    </li>
+                </ol>
+            </div>
+            <div class="zuoye">
+                <ol start="7">
+                    <li>
+                        <a href="./mdn-html-letter.html">待定</a>
+                    </li>
+
+                </ol>
             </div>
         </div>
         <div style="flex: 1;"></div>
     </div>
-    <div>
+    <!-- <div>
         <fieldset>
             <legend style="display: block;
     padding-inline-start: 2px;
@@ -152,7 +172,7 @@
             <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
             <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
         </fieldset>
-    </div>
+    </div> -->
     <!--底部栏-->
     <div class="flex" style="justify-content: center;">
         <div>

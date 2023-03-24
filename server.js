@@ -10,11 +10,6 @@ let fs = require("fs");
 
 // 首先创建一个后端函数
 function houDuan(req, res) {
-  // 第一行用了fs 的readFileSync 函数
-  // 翻译一下就是同步读取文件
-  // 第一个参数是文件的路径"wenZi.txt"，第二个参数是字符编码格式"utf8"
-  // 后面跟了一个toString()函数把读取内容转为string字符串。
-
   // req是发进来的网络请求数据，res是返回数据的函数
   // 这两个参数是下面的创建服务函数传进来的
   // 先用res.writeHead 统一设置返回的网络请求header。
@@ -29,10 +24,15 @@ function houDuan(req, res) {
   if (req.method === "GET") {
     // 判断是否有数据文件
     if (fs.existsSync("wenZi.txt")) {
+      // 第一行用了fs 的readFileSync 函数
+      // 翻译一下就是同步读取文件
+      // 第一个参数是文件的路径"wenZi.txt"，第二个参数是字符编码格式"utf8"
+      // 后面跟了一个toString()函数把读取内容转为string字符串。
       // 如果有那么用readFileSync 同步读取文件 函数获得数据，并toString转化为字符串
       let wenZi = fs.readFileSync("wenZi.txt", "utf8").toString();
       // 返回json字符串，数据放在对象的data属性(这个随便起名)中
       res.end(JSON.stringify({ data: wenZi }));
+      console.log(wenZi);
     } else {
       // 没有则返回空对象
       res.end("{}");
@@ -43,6 +43,7 @@ function houDuan(req, res) {
     // decodeURI 函数解析中文
     // substring的作用可看：https://www.runoob.com/jsref/jsref-substring.html
     let xinWenZi = decodeURI(req.url.substring(1));
+
     fs.writeFileSync("wenZi.txt", xinWenZi);
     res.end("{}");
   } else if (req.method === "DELETE") {
