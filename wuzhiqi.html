@@ -250,7 +250,7 @@
                     window.confirm(
                         (chessColor === "white" ? "白棋" : "黑棋") + "胜利!"
                     );
-                    window.location.href = location.href + '?time=' + ((new Date()).getTime()); //Tips: 如果不清楚是否?还是&，请自行判断~~
+                    window.location.reload();
                 }
             });
         }
