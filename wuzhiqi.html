@@ -42,8 +42,8 @@
             align-content: center;
             width: 400px;
             max-width: 90%;
-            background-color: #e3d7d7;
-            border-radius: 4px;
+            background-color: #eaeaea;
+            border-radius: 6px;
             box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
                 rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
             /* 优化棋盘和棋子显示，四个修改地方之一 */
@@ -58,7 +58,7 @@
             position: relative;
             flex-grow: 1;
             margin: 0px;
-            box-shadow: 0px 0px 1px 1px rgba(12, 12, 12, 0.424) inset;
+            box-shadow: 1px 1px 0px rgba(12, 12, 12, 0.424), 1px 1px 0px rgba(12, 12, 12, 0.424) inset;
             z-index: 0;
         }
 
@@ -78,15 +78,15 @@
         }
 
         .white {
-            background: #fff;
-            border: 1px solid #ccc;
-            box-shadow: 0px 0px 2px #ccc, 0 2px 2px #eee inset;
+            background: #f7f7f7;
+            /* border: 1px solid #8b8b8b; */
+            box-shadow: -1px 1px 2px #4e4e4e, 1px -1px 4px rgb(99, 99, 99) inset;
         }
 
         .black {
-            background: #000;
-            border: 1px solid #000;
-            box-shadow: 0px 0px 2px #eee, -1px 1px 2px rgb(99, 99, 99) inset;
+            background: #131313;
+            /* border: 1px solid #131313; */
+            box-shadow: -1px 1px 2px #242424, -1px 1px 2px rgb(99, 99, 99) inset;
         }
     </style>
 </head>
@@ -188,7 +188,7 @@
         }, true);
         // 这个函数稍微有点难，多练习理解
         function checkWin(column, row, chessColor) {
-            // 四个轴：横、竖、左斜、右斜，[0,1]代表x轴方向不变，y轴向前1
+            // 四个轴：横、竖、左斜、右斜，例如：[0,1]代表x轴方向不变，y轴向前1。
             //
             //      | 0,1 |  1,1
             //x轴   | 原点 | 1,0
